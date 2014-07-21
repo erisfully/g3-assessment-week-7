@@ -20,8 +20,9 @@ class CountryList
     all.map { |country| country[:continent] }.uniq.sort
   end
 
-  def countries_for_continent(continent)
-    all
+  def countries_for_continent
+    countries = all.map { |country| country[:continent] }.uniq.sort
+    p countries["name"]
   end
 
 end
